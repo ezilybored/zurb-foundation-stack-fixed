@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Zurb Stack Template</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  </head>
+<body>
+<div class="grid-x grid align-center">
+    <div class="large-12 medium-12 small-12 cell">
+        {{> header}}
+    </div>
+    <div class="show-for-medium medium-12 cell" style="background-color: green; height: 5vh;">
+        {{> breadcrumbs}}
+    </div>
+    <div class="large-8 medium-12 small-12 cell">
+        <div class="grid-x grid align-center">
+            <div class="show-for-large large-3 cell">
+                {{> sidenav}}
+            </div>
+            <main class="large-9 medium-9 small-12 cell">
+                {{> body}}
+            </main>
+        </div>
+    </div>
+    <div class="large-12 medium-12 small-12 cell">
+        {{> footer}}
+    </div>
+</div>
+
+<script src="{{root}}assets/js/app.js"></script>
+</body>
+</html>
