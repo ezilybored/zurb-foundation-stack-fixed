@@ -63,22 +63,27 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+//Mixins
+@import 'components/mixins';
+
+//Colour palette
+@import 'components/palette';
+
 //Layout
 
 //Header
-@import 'header';
+@import 'components/header';
 
 //Footer
-@import 'footer';
+@import 'components/footer';
 
 //Breadcrumbs
-@import 'breadcrumbs';
+@import 'components/breadcrumbs';
 
 //Sidenav
-@import 'sidenav';
+@import 'components/sidenav';
 
 //Topnav
-@import 'nav';
+@import 'components/nav';
 
 //Main
-

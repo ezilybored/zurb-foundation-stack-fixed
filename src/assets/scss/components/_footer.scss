@@ -1,0 +1,42 @@
+.footer-box {
+    @include section-block(2px, $footer-divider, 3em, center);
+
+    @include breakpoint(medium) {
+        background: url('../../assets/img/footer/footer-large.jpg') no-repeat right bottom;
+        background-size: contain;
+        @include section-block(2px, $footer-divider, 3em, left);
+        min-height: 26.25em;
+
+    }
+
+    @include breakpoint(large) {
+        background: url('../../assets/img/footer/footer-xx-large.jpg') no-repeat right bottom;
+        background-size: auto;
+    }
+}
+
+.footer-text {
+    @include section-text($footer-text, 0, 1em, 0.75em, $footer-text);
+
+    @include breakpoint(medium) {
+        margin: 1em 1em 1em 3em;
+    }
+}
+
+.footer-menu {
+    margin: 0;
+
+    @include breakpoint(medium) {
+        justify-content: left;
+    }
+
+    li {
+        list-style-type: none;
+        display: inline;
+        margin-right: 0.5rem;
+    }
+}
+
+
+
+

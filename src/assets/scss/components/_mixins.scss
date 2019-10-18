@@ -1,0 +1,19 @@
+@mixin section-block($top-border-thickness, $top-border-colour, $margin-top-size, $align-text) {
+    border-top: solid $top-border-thickness $top-border-colour;
+    margin-top: $margin-top-size;
+    text-align: $align-text;
+}
+
+@mixin section-text($text-colour, $padding, $margin, $font-size, $link-colour) {
+    color: $text-colour;
+    padding: $padding;
+    margin: $margin;
+    font-size: $font-size;
+
+    a {
+        color: $link-colour;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
