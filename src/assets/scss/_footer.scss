@@ -1,0 +1,24 @@
+.footer-box {
+    background-color: greenyellow;
+    height: 10vh;
+    border-top: solid 2px black;
+    margin-top: em(20);
+    text-align: center;
+
+    @include breakpoint(medium) {
+
+    margin-top: em(40);
+    min-height: em(420);
+    text-align: left;
+  }
+
+  @include breakpoint(large) {
+
+
+  }
+}
+
+.footer-text {
+    font-size: 1em;
+    color: black;
+}
