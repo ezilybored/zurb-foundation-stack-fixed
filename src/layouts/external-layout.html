@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title is set in the white matter of each page -->
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
 <body>
 <div class="grid-x grid align-center">
@@ -20,10 +19,10 @@
         {{> breadcrumbs}}
     </div>
     <div class="large-8 medium-12 cell">
-        {{> body}}
+        {{> body type="external"}}
     </div>
     <footer class="small-12 cell">
-        {{> footer}}
+        {{> footer type="external"}}
     </footer>
 </div>
 

@@ -1,8 +1,14 @@
 ---
-layout: layout
+layout: student-layout
 title: "zurb-stack template test"
 side: true
 ---
+{{#ifequal type  'external'}}
+    <link rel="stylesheet" href="{{root}}assets/css/external-app.css">
+{{/ifequal}}
+{{#ifequal type  'student'}}
+<link rel="stylesheet" href="{{root}}assets/css/student-app.css">
+{{/ifequal}}
 <div class="grid-x grid align-center">
     <div class="show-for-large large-3 cell">
         {{#if side}}

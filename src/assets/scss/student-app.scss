@@ -69,13 +69,17 @@
 //Colour palette
 @import 'components/palette';
 
+//General
+@import 'svgs';
+@import 'components/icons-student';
+
 //Layout
 
 //Header
 @import 'components/header';
 
 //Footer
-@import 'components/footer';
+@import 'components/footer-student';
 
 //Breadcrumbs
 @import 'components/breadcrumbs';
@@ -86,4 +90,4 @@
 //Topnav
 @import 'components/nav';
 
-//Main
+

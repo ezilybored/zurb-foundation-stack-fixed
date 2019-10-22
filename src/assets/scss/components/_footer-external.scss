@@ -1,10 +1,11 @@
+// External site CSS //
 .footer-box {
-    @include section-block(2px, $footer-divider, 3em, center);
+    @include section-block(2px, $external-footer-divider, white, 3em 0 0 0, center, 1em 4em 0em 4em);
 
     @include breakpoint(medium) {
         background: url('../../assets/img/footer/footer-large.jpg') no-repeat right bottom;
         background-size: contain;
-        @include section-block(2px, $footer-divider, 3em, left);
+        @include section-block(2px, $external-footer-divider, white, 3em 0 0 0, left, 1em 4em 0em 4em);
         min-height: 26.25em;
 
     }
@@ -16,14 +17,14 @@
 }
 
 .footer-text {
-    @include section-text($footer-text, 0, 1em, 0.75em, $footer-text);
+    @include section-text($external-footer-text, 0, 1em, 0.75em, $external-footer-text);
 
     @include breakpoint(medium) {
-        margin: 1em 1em 1em 3em;
+        margin: 1em 1em 1em 1em;
     }
 }
 
-.footer-menu {
+.footer-inline-links {
     margin: 0;
 
     @include breakpoint(medium) {
