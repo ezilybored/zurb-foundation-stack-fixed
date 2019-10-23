@@ -7,10 +7,8 @@
 
 
 // Text style mixins
-@mixin section-text($text-colour, $padding, $margin, $font-size, $link-colour) {
+@mixin section-text($text-colour, $font-size, $link-colour) {
     color: $text-colour;
-    padding: $padding;
-    margin: $margin;
     font-size: $font-size;
 
     a {

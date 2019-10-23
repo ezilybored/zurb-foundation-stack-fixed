@@ -1,23 +1,21 @@
-// External site CSS //
+// External site footer SCSS //
 .footer-box {
-    @include section-block(0px, $student-footer-background, $student-footer-background, cente);
+    @include section-block(0px, $student-footer-background, $student-footer-background, center);
     @include margin(2.5em,0,0,0);
-    @include padding(3em, 2em, 2em, 2em);
+    @include padding(3em, 4em, 2em, 4em);
 
     @include breakpoint(medium) {
         @include section-block(0px, $student-footer-background, $student-footer-background, left);
-        @include margin(2.5em,0,0,0);
-        @include padding(3em, 2em, 2em, 2em);
         min-height: 28em;
-
     }
 }
 
 .footer-text {
-    @include section-text($white, 0, 0em, 1em, $white);
+    @include section-text($white, 1em, $white);
 
     @include breakpoint(medium) {
-        @include section-text($white, 0, 1em, 1em, $white);
+        @include section-text($white, 1em, $white);
+        @include margin(0, 1em, 0, 1em);
     }
 }
 

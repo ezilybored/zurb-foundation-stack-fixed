@@ -3,6 +3,8 @@ layout: student-layout
 title: "zurb-stack template test"
 side: true
 ---
+<!-- To switch templates change layout: student-layout to layout: external-layout This will chnage the type vaiable passed in-->
+<!-- type switches between the two SCSS templates-->
 {{#ifequal type  'external'}}
     <link rel="stylesheet" href="{{root}}assets/css/external-app.css">
 {{/ifequal}}

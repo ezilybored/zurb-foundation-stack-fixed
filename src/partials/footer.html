@@ -1,6 +1,8 @@
 <div class="footer-box">
     <div class="grid-x grid-margin-x">
 
+        <!-- This is currently set to switch between two different templates dependent on the type variable passed in. This depends on the layout used -->
+
         {{#ifequal type 'external'}}
             <section class="medium-shrink cell medium-order-2">
                 <ul class="menu align-center footer-inline-links">         
@@ -20,7 +22,6 @@
 
             <div class="medium-auto cell">
                 <section class="footer-text">
-                    <!-- span may not be needed here. Could group all together -->
                     University of Sussex<br>Sussex House<br> Falmer<br>Brighton BN1 9RH<br>United Kingdom<br>
                 </section>
 
@@ -50,6 +51,8 @@
             </div>
         {{/ifequal}}
 
+        <!-- Switches to the tudent SCSS file -->
+
         {{#ifequal type 'student'}}
             <section class="footer-text medium-4 large-3 cell align-center">
                 <hr class="footer-hr">
@@ -78,7 +81,7 @@
                     <li><a class="icon-social-vimeo" title="Vimeo" href="https://vimeo.com/uniofsussex"><span
                                 class="hide-text">Vimeo</span></a></li>
                 </ul><br>
-                Donwload our app (not a link currently)<br><br>
+                Download our app (not a link currently)<br><br>
                 Policies (including privacy and cookies)<br>
                 Copyright © 2019, University of Sussex
             </section>

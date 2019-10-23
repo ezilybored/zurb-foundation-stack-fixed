@@ -1,4 +1,4 @@
-// External site CSS //
+// External site footer SCSS //
 .footer-box {
     @include section-block(0.2em, $external-footer-divider, white, center);
     @include margin(2.5em,0,0,0);
@@ -11,7 +11,6 @@
         @include margin(2.5em,0,0,0);
         @include padding(1em, 4em, 0em, 4em);
         min-height: 28em;
-
     }
 
     @include breakpoint(large) {
@@ -21,10 +20,11 @@
 }
 
 .footer-text {
-    @include section-text($external-footer-text, 0, 1em, 0.75em, $external-footer-text);
+    @include section-text($external-footer-text, 1em, $external-footer-text);
+    @include margin(1em, 1em, 1em, 1em);
 
     @include breakpoint(medium) {
-        @include section-text($external-footer-text, 0, 1em, 1em, $external-footer-text);
+        @include section-text($external-footer-text, 0.9em, $external-footer-text);
     }
 }
 
