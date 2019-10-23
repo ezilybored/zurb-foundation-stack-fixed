@@ -1,12 +1,16 @@
 // External site CSS //
 .footer-box {
-    @include section-block(2px, $external-footer-divider, white, 3em 0 0 0, center, 1em 4em 0em 4em);
+    @include section-block(0.2em, $external-footer-divider, white, center);
+    @include margin(2.5em,0,0,0);
+    @include padding(1em, 4em, 0em, 4em);
 
     @include breakpoint(medium) {
         background: url('../../assets/img/footer/footer-large.jpg') no-repeat right bottom;
         background-size: contain;
-        @include section-block(2px, $external-footer-divider, white, 3em 0 0 0, left, 1em 4em 0em 4em);
-        min-height: 26.25em;
+        @include section-block(0.2em, $external-footer-divider, white, left);
+        @include margin(2.5em,0,0,0);
+        @include padding(1em, 4em, 0em, 4em);
+        min-height: 28em;
 
     }
 
@@ -20,7 +24,7 @@
     @include section-text($external-footer-text, 0, 1em, 0.75em, $external-footer-text);
 
     @include breakpoint(medium) {
-        margin: 1em 1em 1em 1em;
+        @include section-text($external-footer-text, 0, 1em, 1em, $external-footer-text);
     }
 }
 
@@ -34,7 +38,6 @@
     li {
         list-style-type: none;
         display: inline;
-        margin-right: 0.5rem;
     }
 }
 

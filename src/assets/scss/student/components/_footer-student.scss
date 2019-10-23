@@ -1,0 +1,57 @@
+// External site CSS //
+.footer-box {
+    @include section-block(0px, $student-footer-background, $student-footer-background, cente);
+    @include margin(2.5em,0,0,0);
+    @include padding(3em, 2em, 2em, 2em);
+
+    @include breakpoint(medium) {
+        @include section-block(0px, $student-footer-background, $student-footer-background, left);
+        @include margin(2.5em,0,0,0);
+        @include padding(3em, 2em, 2em, 2em);
+        min-height: 28em;
+
+    }
+}
+
+.footer-text {
+    @include section-text($white, 0, 0em, 1em, $white);
+
+    @include breakpoint(medium) {
+        @include section-text($white, 0, 1em, 1em, $white);
+    }
+}
+
+.footer-head-text {
+    font-weight: bold;
+    font-size: 1.2em;
+  
+}
+
+.footer-inline-links {
+    margin: 0;
+
+    @include breakpoint(medium) {
+        justify-content: left;
+    }
+
+    li {
+        list-style-type: none;
+        display: inline;
+    }
+}
+
+.footer-logo {
+    @include footer-icon-style(5em, 5em);
+    @include margin(0,0,3em,0)
+}
+
+.footer-hr {
+    @include margin(0,0,1em,0);
+    border-top: 0.05em solid;
+    border-color: #ffffff;
+
+}
+
+
+
+

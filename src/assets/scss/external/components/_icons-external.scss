@@ -1,6 +1,15 @@
+.icon-logo{
+    @include svg(logo);
+    @include footer-icon-style(1.5em, 1.5em);
+    &onhover {
+        cursor: hand;
+    }
+}
+
 .icon-social-twitter {
     @include svg(icon-social-twitter);
-    @include footer-icon-style();
+    @include footer-icon-style(1.5em, 1.5em);
+    @include margin(0.5em, 0.5em, 0, 0);
     &onhover {
         cursor: hand;
     }
@@ -8,7 +17,8 @@
 
 .icon-social-instagram {
     @include svg(icon-social-instagram);
-    @include footer-icon-style();
+    @include footer-icon-style(1.5em, 1.5em);
+    @include margin(0.5em, 0.5em, 0, 0);
     &onhover {
         cursor: hand;
     }
@@ -16,7 +26,8 @@
 
 .icon-social-facebook {
     @include svg(icon-social-facebook);
-    @include footer-icon-style();
+    @include footer-icon-style(1.5em, 1.5em);
+    @include margin(0.5em, 0.5em, 0, 0);
     &onhover {
         cursor: hand;
     }
@@ -24,7 +35,8 @@
 
 .icon-social-vimeo {
     @include svg(icon-social-vimeo);
-    @include footer-icon-style();
+    @include footer-icon-style(1.5em, 1.5em);
+    @include margin(0.5em, 0.5em, 0, 0);
     &onhover {
         cursor: hand;
     }
@@ -32,7 +44,8 @@
 
 .icon-social-youtube {
     @include svg(icon-social-youtube);
-    @include footer-icon-style();
+    @include footer-icon-style(1.5em, 1.5em);
+    @include margin(0.5em, 0.5em, 0, 0);
     &onhover {
         cursor: hand;
     }

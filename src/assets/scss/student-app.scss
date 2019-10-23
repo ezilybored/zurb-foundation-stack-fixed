@@ -64,14 +64,14 @@
 @include motion-ui-animations;
 
 //Mixins
-@import 'components/mixins';
+@import 'global/mixins';
 
 //Colour palette
-@import 'components/palette';
+@import 'global/palette';
 
 //General
-@import 'svgs';
-@import 'components/icons-student';
+@import 'global/svgs';
+@import 'student/components/icons-student';
 
 //Layout
 
@@ -79,7 +79,7 @@
 @import 'components/header';
 
 //Footer
-@import 'components/footer-student';
+@import 'student/components/footer-student';
 
 //Breadcrumbs
 @import 'components/breadcrumbs';
